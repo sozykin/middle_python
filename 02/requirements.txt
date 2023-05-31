@@ -1,0 +1,3 @@
+pymorphy3
+nltk
+wget
