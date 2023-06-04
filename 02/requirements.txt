@@ -1,3 +1,4 @@
 pymorphy3
 nltk
 wget
+pandas
