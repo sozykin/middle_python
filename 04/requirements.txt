@@ -1,3 +1,4 @@
+orjson
+pandas
 pyarrow
 SQLAlchemy
-pandas
