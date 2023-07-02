@@ -33,7 +33,10 @@ context = ssl.create_default_context()
 
 # Подключение к почтовому серверу через менеджер контекста
 with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+    # Ружим отладки сетевого протокола SMTP
+    # server.set_debuglevel(1)
     # Авторизация на сервере
     server.login('ptn.course', password)
     # Отправка письма
     server.sendmail(sender_email, receiver_email, message)
+    print("Письмо отправлено!")
